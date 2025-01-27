@@ -1,7 +1,3 @@
-Here’s a simple and effective README file for your project:
-
----
-
 # Tee Fusion
 
 Tee Fusion is a 3D product customization tool built with **React**, **Tailwind CSS**, **Three.js**, and **Framer Motion**. It allows users to change the colors of T-shirts, apply logos, and explore dynamic product visualizations in a sleek and interactive way.

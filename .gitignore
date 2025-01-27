@@ -1,0 +1,67 @@
+# Node modules
+node_modules/
+client/node_modules/
+
+# Build outputs
+dist/
+build/
+client/public/build/
+client/public/*.glb
+
+# Cache and artifacts
+*.cache
+.cache-loader
+.vite/
+client/.vite/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing and coverage
+coverage/
+client/coverage/
+*.lcov
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+client/.env
+client/.env.local
+client/.env.*.local
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+client/.vscode/
+client/.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
+
+# React artifacts
+client/src/*.jsx~
+client/src/*.css~
+
+# Package managers
+package-lock.json
+yarn.lock
+client/package-lock.json
+client/yarn.lock
+
+# Tailwind CSS
+tailwind.config.js
+client/tailwind.config.js
+
+# Vite config
+vite.config.js
+client/vite.config.js

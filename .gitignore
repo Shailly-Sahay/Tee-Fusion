@@ -58,10 +58,3 @@ yarn.lock
 client/package-lock.json
 client/yarn.lock
 
-# Tailwind CSS
-tailwind.config.js
-client/tailwind.config.js
-
-# Vite config
-vite.config.js
-client/vite.config.js

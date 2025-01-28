@@ -15,6 +15,14 @@ html {
   }
 }
 
+body {
+  @apply h-screen;
+}
+
+#root {
+  @apply h-full;
+}
+
 .app {
   @apply relative w-full h-screen overflow-hidden;
 }

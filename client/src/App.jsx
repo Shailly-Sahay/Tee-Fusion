@@ -3,7 +3,7 @@ import { Home, Customizer } from "./pages";
 
 function App() {
   return (
-    <main className="app-transition-all ease-in">
+    <main className="h-full app-transition-all ease-in flex">
       <Home />
       <CanvasModel />
       <Customizer />

@@ -13,7 +13,8 @@ const CanvasModel = () => {
       gl={{ preserveDrawingBuffer: true }}
       className="w-full max-w-full transition-all ease-in"
     >
-      <ambientLight intensity={0.5} />
+      <ambientLight intensity={1} />
+      <directionalLight position={[0, 0, 5]} intensity={1} />
       <Environment preset="city" />
 
       <CameraRig>
@@ -27,3 +28,15 @@ const CanvasModel = () => {
 };
 
 export default CanvasModel;
+
+// <Canvas shadows camera={{ position: [0, 0, 0], fov: 25 }}>
+//   <ambientLight intensity={1} />
+//   <directionalLight position={[2, 2, 2]} intensity={1} />
+//   <Environment preset="city" />
+//   <CameraRig>
+//     <Backdrop />
+//     <Center>
+//       <Shirt />
+//     </Center>
+//   </CameraRig>
+// </Canvas>

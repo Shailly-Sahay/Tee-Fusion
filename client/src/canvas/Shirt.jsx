@@ -15,10 +15,9 @@ const Shirt = () => {
   const fullTexture = useTexture(snap.fullDecal);
 
   React.useEffect(() => {
-    console.log("Materials:", materials);
     if (materials && materials.lambert1) {
+      materials.lambert1.color.set(new THREE.Color(snap.color || "#FF5733"));
       console.log("Initial color:", materials.lambert1.color);
-      materials.lambert1.color = new THREE.Color("#FF5733"); // Set your desired color
     }
   }, [materials]);
 

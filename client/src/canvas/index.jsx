@@ -16,7 +16,6 @@ const CanvasModel = () => {
       <ambientLight intensity={1} />
       <directionalLight position={[0, 0, 5]} intensity={1} />
       <Environment preset="city" />
-
       <CameraRig>
         <Backdrop />
         <Center>
@@ -28,15 +27,3 @@ const CanvasModel = () => {
 };
 
 export default CanvasModel;
-
-// <Canvas shadows camera={{ position: [0, 0, 0], fov: 25 }}>
-//   <ambientLight intensity={1} />
-//   <directionalLight position={[2, 2, 2]} intensity={1} />
-//   <Environment preset="city" />
-//   <CameraRig>
-//     <Backdrop />
-//     <Center>
-//       <Shirt />
-//     </Center>
-//   </CameraRig>
-// </Canvas>

@@ -14,13 +14,6 @@ const Shirt = () => {
   const logoTexture = useTexture(snap.logoDecal);
   const fullTexture = useTexture(snap.fullDecal);
 
-  React.useEffect(() => {
-    if (materials && materials.lambert1) {
-      materials.lambert1.color.set(new THREE.Color(snap.color || "#FF5733"));
-      console.log("Initial color:", materials.lambert1.color);
-    }
-  }, [materials]);
-
   useFrame((state, delta) =>
     easing.dampC(materials.lambert1.color, snap.color, 0.25, delta)
   );

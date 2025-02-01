@@ -14,7 +14,7 @@ const CanvasModel = () => {
       className="w-full max-w-full transition-all ease-in"
     >
       <ambientLight intensity={1} />
-      <directionalLight position={[0, 0, 5]} intensity={1} />
+      <directionalLight position={[0, 0, 1]} intensity={1} />
       <Environment preset="city" />
       <CameraRig>
         <Backdrop />

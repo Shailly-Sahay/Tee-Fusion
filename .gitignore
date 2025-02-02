@@ -3,6 +3,7 @@ node_modules/
 client/node_modules/
 
 # Build outputs
+server/
 dist/
 build/
 client/public/build/

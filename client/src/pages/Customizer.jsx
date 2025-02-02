@@ -54,17 +54,19 @@ const Customizer = () => {
   const handleSubmit = async (type) => {
     if (!prompt) return alert("Please enter a prompt");
 
-    console.log("From handleSubmit:", prompt);
     try {
       setGeneratingImg(true);
 
-      const response = await fetch("http://localhost:8000/api/v1/ai", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ prompt }),
-      });
+      const response = await fetch(
+        `https://tee-fusion.onrender.com/api/v1/ai`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ prompt }),
+        }
+      );
 
       const data = await response.json();
 
@@ -76,7 +78,7 @@ const Customizer = () => {
 
       console.log("Full API Response:", data);
 
-      // ✅ Convert Base64 to a Data URL
+      //  Convert Base64 to a Data URL
       const base64Image = data.photo || null;
 
       if (!base64Image) {
@@ -88,7 +90,7 @@ const Customizer = () => {
 
       console.log("Generated Image URL:", imageUrl);
 
-      handleDecals(type, imageUrl); // ✅ Pass the correct Data URL
+      handleDecals(type, imageUrl); // Pass the correct Data URL
     } catch (error) {
       console.error("Frontend error:", error);
       alert("Something went wrong: " + error.message);

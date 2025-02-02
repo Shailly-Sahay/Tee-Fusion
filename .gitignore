@@ -6,7 +6,7 @@ client/node_modules/
 dist/
 build/
 client/public/build/
-client/public/*.glb
+
 
 # Cache and artifacts
 *.cache

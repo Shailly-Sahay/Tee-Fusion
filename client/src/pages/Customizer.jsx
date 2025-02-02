@@ -58,7 +58,8 @@ const Customizer = () => {
       setGeneratingImg(true);
 
       const response = await fetch(
-        `https://tee-fusion.onrender.com/api/v1/ai`,
+        `http://localhost:8000/api/v1/ai`,
+        // `https://tee-fusion.onrender.com/api/v1/ai`,
         {
           method: "POST",
           headers: {

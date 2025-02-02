@@ -13,13 +13,6 @@ const PORT = process.env.PORT;
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 
-const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "frontend", "build")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
-});
-
 app.use("/api/v1/ai", router);
 
 app.get("/", (req, res) => {

@@ -13,7 +13,6 @@ Built using **Three.js & React**, this project lets you:
 ## **Tech Stack**
 
 🔹 **Frontend:** React, Three.js, Tailwind, Framer Motion, Vite  
-🔹 **Backend:** Node.js, Express  
 🔹 **Hosting:** Netlify
 
 ---
